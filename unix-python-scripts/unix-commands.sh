@@ -30,13 +30,13 @@ cut -f 7 GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt | sort | uniq -c | 
 # 1132 Muscle - Skeletal
 # 3288 Whole Blood
 
-grep "RNA" GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt | wc -l
+grep -c "RNA" GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt
 
 # 20017
 
-wc -l GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt
+grep -v "RNA" GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt | wc -l
 
-# 22952 GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt
+# 2935
 
 # Exercise 5
 
