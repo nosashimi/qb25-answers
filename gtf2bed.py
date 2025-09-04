@@ -12,3 +12,5 @@ for line in fs:
         line = line.split("\t")
         if line[2] == "gene":
             print(f"{line[0]}   {int(line[3]) - 1}  {line[4]}   {line[8]}")
+
+fs.close()
