@@ -15,3 +15,9 @@ The alignment matches the "RBRRBB" pattern in the GenoData file, where miss-matc
 Exercise 4
 
 minimap2 -a -x map-ont ../genomes/sacCer3.fa ../rawdata/ERR8562478.fastq > longreads.sam
+
+Exercise 5
+
+hisat2 -x ../genomes/sacCer3 -U ../rawdata/SRR10143769.fastq > rnaseq.sam
+
+Most reads occur towards the 3' end of each gene.
