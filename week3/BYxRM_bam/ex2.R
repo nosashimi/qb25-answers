@@ -24,5 +24,5 @@ ggplot(df2, aes(x = V1)) +
   ) +
   xlim(0,20)
 
-# It is a right skewed distribution with most read depths around 5, which is expected since
-# Illumina sequencing is short read and therefore most reads have moderate coverage.
+# It is a right skewed distribution with most read depths around 5, which is somewhat surprising
+# since normal Illumina read depths are >15X.

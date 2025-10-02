@@ -1,6 +1,6 @@
 library(tidyverse)
 
-df <- read_delim("~/qb25-answers/week3/BYxRM_bam/gt_long.txt", delim = "\t") 
+df <- read_delim("~/qb25-answers/week3/BYxRM_bam/gt_long.txt", delim = "\t")  
 
 # chrII of sample A01_62
 df %>%
