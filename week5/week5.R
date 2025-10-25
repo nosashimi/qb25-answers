@@ -37,7 +37,7 @@ df_long <- data.frame(
 )
 
 ggplot(df_long, aes(x = DNM, fill = Parent)) +
-  geom_density(alpha = 0.5) +
+  geom_histogram(alpha = 0.5,position = 'identity') +
   labs(x = "# of DNMs",
        y = "Density",
        fill = "Parent") +
