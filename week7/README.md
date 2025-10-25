@@ -1,0 +1,2 @@
+Question 1.3: The data for Fe_Rep1 and LFC.Fe_Rep3 seem to be mixed up. The PCA plot shows clear separation between tissues indicating significant biological differences between tissues in gene expression. The first principal component is best explained by the positions of the midgut the tissues are in.
+Question 3: The results make sense since the gut is involved in digestion and enrichment of proteolysis genes is natually linked to digestionl

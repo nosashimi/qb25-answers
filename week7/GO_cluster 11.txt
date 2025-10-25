@@ -1,0 +1,16 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.16423886 Released 2025-07-22
+Analyzed List:	cluster_genes.txt (Drosophila melanogaster)
+Reference List:	Drosophila melanogaster (all genes in database)
+Test Type:	FISHER
+Correction:	FDR
+GO biological process complete	Drosophila melanogaster - REFLIST (13821)	cluster_genes.txt (40)	cluster_genes.txt (expected)	cluster_genes.txt (over/under)	cluster_genes.txt (fold Enrichment)	cluster_genes.txt (raw P-value)	cluster_genes.txt (FDR)
+protein processing (GO:0016485)	94	7	.27	+	25.73	8.33E-09	3.02E-05
+proteolysis (GO:0006508)	860	19	2.49	+	7.63	3.79E-13	2.75E-09
+protein metabolic process (GO:0019538)	1730	20	5.01	+	3.99	9.12E-09	2.20E-05
+primary metabolic process (GO:0044238)	3819	24	11.05	+	2.17	2.01E-05	3.65E-02
