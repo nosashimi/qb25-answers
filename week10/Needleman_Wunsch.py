@@ -107,7 +107,8 @@ for i in range(len(sequence1_alignment)):
 # Certainly not necessary, but this writes 100 positions at
 # a time to the output, rather than all of it at once.
 
-output = open(sys.argv[4], 'a')
+output = open(sys.argv[4], "w")
+info = open(sys.argv[5], "a")
 
 for i in range(0, len(identity_alignment), 100):
 	output.write(sequence1_alignment[i:i+100] + '\n')
@@ -118,11 +119,12 @@ for i in range(0, len(identity_alignment), 100):
 #=============================#
 # Calculate sequence identity #
 #=============================#
-output.write(f"Number of gaps in Sequence 1: {sequence1_alignment.count("-")}\n")
-output.write(f"Number of gaps in Sequence 2: {sequence2_alignment.count("-")}\n")
-output.write(f"Sequence 1 percent identity: {identity_alignment.count('|') / len(sequence1) * 100}%\n")
-output.write(f"Sequence 2 percent identity: {identity_alignment.count('|') / len(sequence2) * 100}%\n")
-output.write(f"Alignment score: {f_matrix[len(sequence1), len(sequence2)]}\n\n\n")
+info.write(f"{sys.argv[6]} alignment\n")
+info.write(f"Number of gaps in Sequence 1: {sequence1_alignment.count("-")}\n")
+info.write(f"Number of gaps in Sequence 2: {sequence2_alignment.count("-")}\n")
+info.write(f"Sequence 1 percent identity: {identity_alignment.count('|') / len(sequence1) * 100}%\n")
+info.write(f"Sequence 2 percent identity: {identity_alignment.count('|') / len(sequence2) * 100}%\n")
+info.write(f"Alignment score: {f_matrix[len(sequence1), len(sequence2)]}\n\n\n")
 
 #======================#
 # Print alignment info #
