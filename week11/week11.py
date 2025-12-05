@@ -48,10 +48,16 @@ reads = ['ATTCA', 'ATTGA', 'CATTG', 'CTTAT', 'GATTG', 'TATTT', 'TCATT', 'TCTTA',
 f = open("edges.dot", "a")
 f.write("digraph {\n")
 
+graph = dict()
+
 for read in reads:
     for i in range(len(read) - 3):
         kmer1 = read[i: i + 3]
         kmer2 = read[i + 1: i + 4]
-        f.write(kmer1 + " -> " + kmer2 + ";\n")
+        if not kmer1 in graph:
+            graph[kmer1] = kmer2
+
+for keys in graph:
+    f.write(keys + " -> " + graph[keys] + ";\n")
 
 f.write("}\n")
